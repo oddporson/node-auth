@@ -14,9 +14,7 @@ mongoose.connect(
 
 // Middleware
 app.use(express.json());
-
 // Route Middlewares
 app.use('/api/user', authRoute);
-
 
 app.listen(3000, ()=> console.log("Server up and running"));
