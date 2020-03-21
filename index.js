@@ -5,12 +5,9 @@ const mongoose = require('mongoose');
 
 dotenv.config();
 
-
 // Connect to DB
 mongoose.connect(
-  process.env.DB_CONNECT, 
-{ useUnifiedTopology: true, useNewUrlParser: true },
-() => console.log('Connected to db!')
+  process.env.DB_CONNECT, { useUnifiedTopology: true, useNewUrlParser: true }, () => console.log('Connected to db!')
 );
 
 // Import Routes
